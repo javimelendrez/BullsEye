@@ -23,6 +23,13 @@ class ViewController: UIViewController {
         alert.addAction(action)
         present(alert, animated: true, completion: nil)
     }
+    @IBAction func showWhosThere(){
+        let alert = UIAlertController(title: "Whos there?", message: "This is my first app", preferredStyle: .actionSheet)
+        let action = UIAlertAction(title: "Awesome", style: .default, handler: nil)
+        //tell alert to add button to controller
+        alert.addAction(action)
+        present(alert, animated: true, completion: nil)
+    }
 
 }
 
